@@ -1,6 +1,6 @@
 # Data_Clean_Code
 I created these Python scripts for Bordan Shoe Co. to help cleaning data.
-The scripts including the following feature and can be used as source code(also can be my perosnal reference):
+The scripts including the following feature and can be used as source code(also for my perosnal reference):
 
 1. use "xlrd" Python library to open a excel workbook
 2. extract data from a excel workbook
