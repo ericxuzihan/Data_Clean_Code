@@ -1,3 +1,6 @@
+# Set up the filter to detect the wrong data and modified to new data
+# Use the "enumarate" call to locate the data in right row number
+
 from xlrd import open_workbook
 from xlutils.copy import copy
 import xlwt
