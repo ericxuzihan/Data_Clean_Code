@@ -14,8 +14,8 @@ def chrome_script():
     driver.get("https://shop.spira.com/Admin/Orders/Default.aspx")
     driver.implicitly_wait(2)
 
-    driver.find_element_by_id("ctl00_MainContent_LoginDialog1_UserName").send_keys('Amanda')
-    driver.find_element_by_id("ctl00_MainContent_LoginDialog1_Password").send_keys('welcome2LA')
+    driver.find_element_by_id("ctl00_MainContent_LoginDialog1_UserName").send_keys('XXXXXX')
+    driver.find_element_by_id("ctl00_MainContent_LoginDialog1_Password").send_keys('XXXXXX')
 
 
     driver.find_element_by_id("ctl00_MainContent_LoginDialog1_LoginButton").click()
