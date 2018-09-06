@@ -1,8 +1,8 @@
 # In this script, the web automation was generated for company use.
 # Which it can login the web by given username and password, then click target button
-# and print the daily report.
+# and print the daily report as human does, also can download the report to local folder.
 # The revised version is setting up .bat file which allows the script running at the given time everyday
-# without any human operation exxcpt developer side(like me).
+# without any human operation except developer side(like me).
 
 from selenium import webdriver
 import time
