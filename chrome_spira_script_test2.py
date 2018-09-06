@@ -5,7 +5,14 @@ import logging
 def chrome_script():
 
     driver = webdriver.Chrome('C:\\Users\\Eric\\Downloads\\chromedriver_win32\\chromedriver')
-    driver.get("https://www.google.com/maps/dir/40.4515849,-3.6903752/41.380896,2.1228198/@40.4682789,-5.2677025,6z/am=t?hl=en")
+    driver.get("https://shop.spira.com/Admin/Orders/Default.aspx")
+    driver.implicitly_wait(2)
+
+    driver.find_element_by_id("ctl00_MainContent_LoginDialog1_UserName").send_keys('Amanda')
+    driver.find_element_by_id("ctl00_MainContent_LoginDialog1_Password").send_keys('welcome2LA')
+
+
+    driver.find_element_by_id("ctl00_MainContent_LoginDialog1_LoginButton").click()
 
 
     driver.find_element_by_id("ctl00_MainContent_StatusFilter").click()
@@ -62,23 +69,32 @@ def chrome_script():
 
     time.sleep(10)
 
+    pyautogui.hotkey('ctrl', 'shift', 'p')
+
+    time.sleep(4)
+
+    pyautogui.hotkey('alt', 'p')
+
     driver.forward()
 
-    driver.find_element_by_xpath("//button[@class='print default']").click()
+    driver.find_element_by_xpath("//button[text()='Print']").click()
 
-        #driver.implicitly_wait(10)
+    #driver.find_element_by_css_selector('button.print default')
+    #printButton.click();
 
-    # <button vet="13034" jsaction="print.print" class="widget-print-button kd-button kd-button-submit"> Print </button>
+    #driver.find_element_by_xpath("//button[@Class='Print']").click()
+    # driver.find_element_by_xpath("//button[@class()='print default']").click()
 
-    #driver.find_element_by_xpath("//button[@class='widget-print-button kd-button kd-button-submit']").click()
+    # <button class="print default">Print</button>
+
+    #driver.find_element_by_xpath("//a[@href='../../Assets/A2K.CSV']").click()
+    #< a href = "../../Assets/A2K.CSV" > View A2K file </a>
 
     time.sleep(5)
 
     return
 
 chrome_script()
-
-
 """""""""""""""""""""""
 
 def Firefox_Fax_Script():
