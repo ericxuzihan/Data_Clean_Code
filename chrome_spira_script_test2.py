@@ -6,19 +6,7 @@ def chrome_script():
 
     driver = webdriver.Chrome('C:\\Users\\Eric\\Downloads\\chromedriver_win32\\chromedriver')
     driver.get("https://www.google.com/maps/dir/40.4515849,-3.6903752/41.380896,2.1228198/@40.4682789,-5.2677025,6z/am=t?hl=en")
-    #driver.implicitly_wait(10)
 
-    # <button vet="13034" jsaction="print.print" class="widget-print-button kd-button kd-button-submit"> Print </button>
-
-    #driver.find_element_by_xpath("//button[@class='widget-print-button kd-button kd-button-submit']").click()
-
-    time.sleep(5)
-
-    return
-
-chrome_script()
-
-"""""""""""""""""""""""
 
     driver.find_element_by_id("ctl00_MainContent_StatusFilter").click()
 
@@ -78,9 +66,20 @@ chrome_script()
 
     driver.find_element_by_xpath("//button[@class='print default']").click()
 
+        #driver.implicitly_wait(10)
+
+    # <button vet="13034" jsaction="print.print" class="widget-print-button kd-button kd-button-submit"> Print </button>
+
+    #driver.find_element_by_xpath("//button[@class='widget-print-button kd-button kd-button-submit']").click()
+
+    time.sleep(5)
+
+    return
+
+chrome_script()
 
 
-
+"""""""""""""""""""""""
 
 def Firefox_Fax_Script():
     logging.basicConfig(filename='fax_script_log.log', level=logging.INFO)
